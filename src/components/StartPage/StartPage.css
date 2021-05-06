@@ -1,0 +1,191 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1160px;
+  text-align: center;
+}
+.sub2 {
+  display: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 30% 25% 20% 40%;
+  overflow-y: hidden;
+}
+
+body .startPage {
+  position: relative;
+}
+
+
+.bg {
+  position: absolute;
+  background-image: url(../../assets/who-milli-logo.png);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0.025;
+}
+
+.title {
+  margin-top: 10%;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.subtitle {
+  width: 50%;
+  font-size: 40px;
+  position: relative;
+  display: block;
+}
+
+.subtitleAni {
+  margin-top: 20px;
+  margin-left: 50%;
+  position: absolute;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  overflow: hidden;
+ 
+}
+
+
+.arrowDown {
+  font-size: 120px;
+  text-align: center !important;
+  display: block;
+}
+
+.buttonToStart button {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+  border: none;
+  padding: 30px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  transform: translateY(-10px);
+  box-shadow: none;
+}
+
+
+@media (max-width: 1920px) {
+  .title {
+    font-size: 75px;
+  }
+  .subtitle {
+    font-size: 35px;
+    margin-top: 55px;
+  }
+}
+@media (max-width: 1366px) {
+  .title {
+    margin-top: 8%;
+    font-size: 55px;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+  .buttonToStart button {
+    font-size: 30px;
+    padding: 20px 30px;
+    margin-top: 20px;
+  }
+  .arrowDown {
+    font-size: 90px;
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 1223px) {
+  .title {
+    margin-top: 5%;
+    font-size: 45px;
+  }
+  .subtitle {
+    margin-top: -30px;
+    font-size: 25px;
+  }
+  .buttonToStart button {
+    margin-top: 0;
+  }
+  .arrowDown {
+    margin-top: -50px;
+  }
+}
+
+@media(max-width:1112px) {
+  .title {
+    font-size: 40px;
+    margin-top: 8%;
+  }
+  .subtitle {
+    margin-top: -70px;
+  }
+  .arrowDown {
+    margin-top: -30px;
+  }
+}
+
+@media(max-width:767px) {
+  .title {
+    font-size: 30px;
+    margin: 12% 5px 0;
+  }
+  .subtitle {
+    font-size: 20px;
+    margin-top: -90px;
+  }
+  .sub1 {
+    display: none;
+  }
+  .sub2 {
+    display: block;
+  }
+  .subtitleAni {
+    width: 25ch;
+  }
+}
+
+@media(max-width:375px) {
+  .title {
+    font-size: 27px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+}
+
+@media(max-width:320px) {
+  .title {
+    font-size: 24px;
+  }
+  .subtitle {
+    margin-top: -70px;
+    font-size: 16px;
+  }
+  .arrowDown{
+    font-size: 70px;
+  }
+  .buttonToStart button {
+    padding: 15px 25px;
+    font-size: 25px;
+  }
+}

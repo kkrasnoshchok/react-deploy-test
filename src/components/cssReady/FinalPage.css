@@ -1,0 +1,117 @@
+.finalPage {
+    height: 100vh;
+    width: 100vw;
+    background: #8e44ad;
+    color: #ecf0f1;
+}
+
+.finalInner {
+    padding-top: 10%;
+}
+
+.finalTitle {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.results {
+    width: 65%;
+    text-align: left;
+    margin: 50px auto 0;
+}
+
+.resultsTitle {
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.result {
+    margin: 20px 0px 0px 20px;
+    font-size: 1.5em;
+}
+
+.restartButton {
+    margin-top: 60px;
+}
+
+.restButton {
+    border: none;
+    margin-top: 100px;
+    padding: 20px 30px;
+    font-size: 30px;
+    background: #1abc9c;
+    color: #2c3e50;
+    border-radius: 5px;
+    border: 2px solid #16a085;
+    box-shadow: 0px 7px #16a085;
+    cursor: pointer;
+}
+
+.restButton:hover {
+    box-shadow: 0px 0px #16a085;
+    transform: translateY(7px);
+    transition: .5s ease-in-out;
+}
+
+.contacts {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social {
+    color: #fff;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.social-item {
+    height: 70px;
+    width: 70px;
+    /* border-radius: 50%; */
+    border: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    transition: all .6s;
+    box-shadow: 0px 10px 0px #7f8c8d;
+}
+
+.social-item:hover {
+    transform: translateY(10px);
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.facebook:hover {
+    border-color: #3c5998;
+    box-shadow: 0px 0px 35px #3c5998;
+    color: #3c5998;
+}
+
+.instagram:hover {
+    border-color: #e74c3c;
+    box-shadow: 0px 0px 35px #e74c3c;
+    color: #e74c3c;
+}
+
+.telegram:hover {
+    border-color: #03A9F4;
+    box-shadow: 0px 0px 35px #03A9F4;
+    color: #03A9F4;
+}
+
+.phone:hover {
+    border-color: #2ecc71;
+    box-shadow: 0px 0px 35px #2ecc71;
+    color: #2ecc71;
+}
