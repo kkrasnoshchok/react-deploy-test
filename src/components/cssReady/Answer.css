@@ -16,7 +16,7 @@
     border-radius: 5px;
     transform: translateY(-5px);
     box-shadow: 0px 5px 0px #2980b9;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 .answers div:hover {
     background: #7f8c8d;
