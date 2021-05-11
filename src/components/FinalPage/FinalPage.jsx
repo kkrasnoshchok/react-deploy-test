@@ -73,10 +73,6 @@ export default function FinalPage(props) {
             <div className="result numeric">
               - В цифрах : {props.score}/{Object.keys(props.questions).length}
             </div>
-            <div className="result percent">
-              - В відсотках :{" "}
-              {Math.ceil((props.score / Object.keys(props.questions).length) * 100)}%
-            </div>
             <div className="result money">- В грошах : {scoreMoney()} грн</div>
           </div>
           <div className="restartButton">
@@ -87,17 +83,29 @@ export default function FinalPage(props) {
           <div className="contacts">
             <ul className="social">
               <li className="social-item facebook">
-                <a href="https://www.facebook.com/Millionaire/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.facebook.com/Millionaire/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaFacebookF />
                 </a>
               </li>
               <li className="social-item instagram">
-                <a href="https://www.instagram.com/millionairetv/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.instagram.com/millionairetv/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaInstagram />
                 </a>
               </li>
               <li className="social-item telegram">
-                <a href="https://t.me/GamesHDBot?game=Millionaire" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://t.me/GamesHDBot?game=Millionaire"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaTelegramPlane />
                 </a>
               </li>

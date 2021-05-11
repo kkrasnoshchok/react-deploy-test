@@ -14,6 +14,15 @@ export default function FailPage(props) {
   function setQuizState() {
     setGameState("start");
   }
+
+  let howMuchMoney = (s) => {
+    s = props.score;
+    if (s >= 5 && s < 10) {
+      return "1 000";
+    } else if (s >= 10 && s < 15) {
+      return "32 000";
+    }
+  };
   return (
     <div className="failPage">
       <div className="failBg"></div>
@@ -36,6 +45,7 @@ export default function FailPage(props) {
             <div className="result numeric">
               {props.score}/{Object.keys(props.questions).length}
             </div>
+            <div className="result money">- В грошах : {props.score < 5 ? "0" : howMuchMoney()} грн</div>
           </div>
           <div className="restartButton">
             <button className="restButton" onClick={setQuizState}>
