@@ -6,6 +6,7 @@ import ModalWindow from "../ModalWindow/ModalWindow";
 
 function QuizPage(props) {
   const [modalActive, setModalActive] = useState(false);
+  const [isButtonDisabled, setButtonDisabled] = useState(false);
   return (
     <div className="quizPage">
       <ModalWindow active={modalActive} setActive={setModalActive}>
@@ -35,10 +36,12 @@ function QuizPage(props) {
           <button
             onClick={() => {
               setModalActive(true);
+              setButtonDisabled(true);
             }}
             className="hint peoplesChoice"
+            disabled={isButtonDisabled ? true : false}
           >
-            допомога зали
+            <div className="forDisabled">допомога зали</div>
           </button>
           <button className="hint takeMoney" onClick={props.tK}>
             забрати гроші

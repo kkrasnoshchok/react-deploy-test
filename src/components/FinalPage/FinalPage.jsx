@@ -74,7 +74,7 @@ export default function FinalPage(props) {
               - В цифрах : {props.score}/{Object.keys(props.questions).length}
             </div>
             <div className="result percent">
-              - В процентах :{" "}
+              - В відсотках :{" "}
               {Math.ceil((props.score / Object.keys(props.questions).length) * 100)}%
             </div>
             <div className="result money">- В грошах : {scoreMoney()} грн</div>
